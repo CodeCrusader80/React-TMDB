@@ -3,8 +3,8 @@ import s from "./style.module.css"
 import {TVShowAPI} from "./API/tv-shows.js";
 import {useEffect, useState} from "react";
 import {BACKDROP_BASE_URL} from "./config.js";
+import {MovieDetail} from "./components/MovieDetail/MovieDetail.jsx";
 
-TVShowAPI.fetchPopulars()
 export function App() {
     const [currentMovie, setCurrentMovie] = useState();
 
@@ -17,8 +17,6 @@ export function App() {
     useEffect(() => {
         fetchPopulars();
     }, []);
-
-    console.log("***", currentMovie);
 
   return (
       <div className={s.main_container} style={{background: currentMovie ? `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("${BACKDROP_BASE_URL}${currentMovie.backdrop_path}") no-repeat center/ cover` : "#0A0C10"}}>
@@ -33,7 +31,7 @@ export function App() {
                   </div>
               </div>
           </div>
-          <div className={s.tv_show_detail}>Details</div>
+          <div className={s.tv_show_detail}>{currentMovie && <MovieDetail movie={currentMovie}/>}</div>
           <div className={s.recommendations}>Recommended Movies</div>
       </div>
   );
