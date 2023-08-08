@@ -6,4 +6,4 @@
 
 <h3>Assets</h3>
 <hr>
-> Thanks to <a src="https://pixabay.com/fr/vectors/capitaine-des-personnes-célèbres-1296107/">OpenClipart-Vectors</a> for his captain jack sparrow vector logo.
+Thanks to <a href="https://pixabay.com/fr/vectors/capitaine-des-personnes-célèbres-1296107/">OpenClipart-Vectors</a> for his captain jack sparrow vector logo.
