@@ -7,3 +7,7 @@
 <h3>Assets</h3>
 <hr>
 Thanks to <a href="https://pixabay.com/fr/vectors/capitaine-des-personnes-célèbres-1296107/">OpenClipart-Vectors</a> for his captain jack sparrow vector logo.
+
+<h3>Where see the result ?</h3>
+<hr>
+As expected, the deployment has been carried out to allow you to have a real display of the application with Vercel. To see the result online <a href="https://tv-pulse.vercel.app">click here</a>.
