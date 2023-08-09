@@ -5,7 +5,7 @@ export function MovieDetail({movie}) {
     const rating = (movie.vote_average/2).toFixed(2);
     return(
         <div>
-            <div className={s.title}>{movie.title}</div>
+            <div className={s.title}>{movie.name}</div>
             <div className={s.rating_container}>
                 <FiveStarRating rating={rating}/>
                 <div className={s.rating}>{rating}</div>

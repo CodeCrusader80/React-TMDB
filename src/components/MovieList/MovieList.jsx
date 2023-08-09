@@ -5,6 +5,7 @@ export function MovieList({movieList, onClickItem}){
         <>
         <div className={s.title}>You may also like :</div>
         <div className={s.list}>
+            {/* eslint-disable-next-line react/prop-types */}
             {movieList.map((movie)=>{
                 return (
                     <span key={movie.id} className={s.movie_list_item}>
